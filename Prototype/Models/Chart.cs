@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Prototype.Models
 {
-    public class Bar
-    { 
+    public class Chart
+    {
         [Key]
         public int Id { get; set; }
-        public string Day { get; set; }
-        public int year { get; set; }
+        public int Age { get; set; }
+        public int Number { get; set; }
     }
 }

@@ -9,7 +9,7 @@
                          s.Add().ArgumentField("Name").ValueField("Area").Label(e => { e.Visible(true); e.Format("percent"); });
 
         })
-        .Title("Area of Countries")
+        .Title("Area of Cities")
         .Palette(VizPalette.Soft)
         .SizeGroup("sizeGroupName")
         .Legend(l => l
@@ -19,14 +19,14 @@
             .RowCount(2)
         )
         .DataSource(new[] {
-            new { Name = "Russia", Area = 0.12 },
-            new { Name = "Canada", Area = 0.07 },
-            new { Name = "USA", Area = 0.07 },
-            new { Name = "China", Area = 0.07 },
-            new { Name = "Brazil", Area = 0.06 },
-            new { Name = "Australia", Area = 0.05 },
-            new { Name = "India", Area = 0.02 },
-            new { Name = "Others", Area = 0.55 }
+            new { Name = "Other", Area = 0.12 },
+            new { Name = "Manguang", Area = 0.07 },
+            new { Name = " Durban", Area = 0.07 },
+            new { Name = "Polokwane", Area = 0.07 },
+            new { Name = "Buffalo City", Area = 0.06 },
+            new { Name = "Nelson Mandela Bay", Area = 0.05 },
+            new { Name = "Cape Town", Area = 0.02 },
+            new { Name = "Johannesburg", Area = 0.55 }
         })
         )
 
@@ -36,7 +36,7 @@
         })
         .Palette(VizPalette.SoftPastel)
         .SizeGroup("sizeGroupName")
-        .Title("Water/Land Ratio")
+        .Title("Profit/Capital Ratio")
         .Legend(l => l
             .VerticalAlignment(VerticalEdge.Bottom)
             .HorizontalAlignment(HorizontalAlignment.Center)
@@ -44,8 +44,8 @@
             .RowCount(2)
         )
         .DataSource(new[] {
-            new { Name = "Land", Area = 0.29 },
-            new { Name = "Water", Area = 0.71 }
+            new { Name = "Capital", Area = 0.29 },
+            new { Name = "Profit", Area = 0.71 }
         })
         )
 </div>
